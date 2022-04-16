@@ -27,15 +27,14 @@ public class SolutionRecursion1 {
         // -> 베이스 조건 3단계로 생각한다.
         // -> 부분 문제 답에, 현재 문자열의 첫글자를 붙여준다.
         String test = "hello";
-
-
         System.out.println(solutionRecursion1.solution(test));
-
     }
 
-    public String solution (String str) {
+    public String solution(String str) {
         // 0 일때
-        if (str.length() == 0) return "";
+        if (str.length() == 0) {
+            return "";
+        }
         String nextStr = str.substring(1);
         return solution(nextStr) + str.charAt(0);
     }
