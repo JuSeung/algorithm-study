@@ -1,7 +1,7 @@
 package codingTest;
 /*
 *   정수 범위는 [1 - 50000]
-*   28 힙은 10이다 이 합이 다른 숫자인 37을 리턴 해줘야 하낟.
+*   28 합은 10이다 이 합이 다른 숫자인 37을 리턴 해줘야 한다.
 *
 * */
 
@@ -14,7 +14,7 @@ public class Solution {
     }
 
     public void solution(int N) {
-        int result = 0;
+        int result;
         String values = conversionString(N);
         int addNumber = addResult(values);
         result = getSameNumber(N, addNumber);
@@ -42,9 +42,9 @@ public class Solution {
         for (int i = n; i < MAX_NUMBER; i++) {
             String nextNumberValues = conversionString(i);
             int nextNumber = addResult(nextNumberValues);
-                if (number == nextNumber) {
-                    return Integer.parseInt(nextNumberValues);
-                }
+            if (number == nextNumber) {
+                return Integer.parseInt(nextNumberValues);
+            }
         }
         return result;
     }
