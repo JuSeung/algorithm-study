@@ -3,8 +3,6 @@ package backjoon.DFS_BFS;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.StringTokenizer;
 
 /***
@@ -40,18 +38,6 @@ import java.util.StringTokenizer;
  * 4 7
  * 예제 출력 1
  * 4
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
  */
 public class Viruses {
     static int C, N;
