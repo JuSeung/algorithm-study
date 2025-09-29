@@ -1,8 +1,6 @@
 package codingTest;
 
 
-import java.util.ArrayList;
-import java.util.List;
 
 /*
 * 문제 상의,하의 색상을 동일한 걸 사면 할인 한 가격으로 계산 해준다.
@@ -28,12 +26,12 @@ class Solution1 {
     private int clothsDivision(String[] colors, int price, int dcPrice) {
         int totalPrice = 0;
         for (String color : colors) {
-            String top = String.valueOf(color.charAt(0));
-            String pants = String.valueOf(color.charAt(1));
-            if (top.equals(pants)) {
-                totalPrice += price;
-            } else {
+            char top = color.charAt(0);
+            char pants = color.charAt(1);
+            if (top == pants) {
                 totalPrice += dcPrice;
+            } else {
+                totalPrice += price;
             }
         }
         return totalPrice;

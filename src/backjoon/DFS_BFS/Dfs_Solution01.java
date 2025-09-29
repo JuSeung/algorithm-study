@@ -1,10 +1,14 @@
-import java.io.*;
-import java.util.*;
+package backjoon.DFS_BFS;
 
 
-class Main {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
-        static int N, M;
+class Dfs_Solution01 {
+
+    static int N, M;
     static int[][] area;
     static boolean[] visited;
     static int count;
